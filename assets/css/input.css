@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@theme{
+    --color-sage:#925234;
+}
+
+@font-face {
+    font-family: Alga;
+    src: url('../fonts/Alga-Light.otf') format('opentype');
+    font-display: swap;
+    font-weight: 400;
+}
+@font-face {
+    font-family: Alga;
+    src: url('../fonts/Alga-Medium.otf') format('opentype');
+    font-display: swap;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url('../fonts/HelveticaNeue-Light.otf') format('opentype');
+    font-display: swap;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url('../fonts/HelveticaNeue-Medium.otf') format('opentype');
+    font-display: swap;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Copperplate;
+    src: url('../fonts/Copperplate-Light.otf') format('opentype');
+    font-display: swap;
+    font-weight: 400;
+}
+@font-face {
+    font-family: Copperplate;
+    src: url('../fonts/Copperplate.otf') format('opentype');
+    font-display: swap;
+    font-weight: 500;
+}
+body {
+    color: #000;
+}
+.alga {
+    font-family: Alga;
+}
+.helvetica-neue{
+    font-family: "Helvetica Neue";
+}
+
+.copperplate{
+    font-family: Copperplate;
+}
