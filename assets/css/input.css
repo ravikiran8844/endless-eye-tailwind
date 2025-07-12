@@ -62,3 +62,6 @@ main{
 [x-cloak] {
     display: none !important;
 }
+.custom-shadow{
+    box-shadow: 1px 1px 2px 0px rgba(255, 255, 255, 0.30) inset, -1px -1px 2px 0px rgba(230, 230, 230, 0.50) inset, -5px 5px 10px 0px rgba(230, 230, 230, 0.20), 5px -5px 10px 0px rgba(230, 230, 230, 0.20), -5px -5px 10px 0px rgba(255, 255, 255, 0.90), 5px 5px 13px 0px rgba(230, 230, 230, 0.90);
+}
