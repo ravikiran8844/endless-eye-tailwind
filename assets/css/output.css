@@ -11,7 +11,6 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --container-xs: 20rem;
     --container-sm: 24rem;
     --container-md: 28rem;
     --container-7xl: 80rem;
@@ -943,7 +942,7 @@ body {
   font-family: "Helvetica Neue";
 }
 main {
-  min-height: screen-80px;
+  min-height: calc(100vh - 160px);
 }
 .alga {
   font-family: Alga;
