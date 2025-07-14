@@ -63,108 +63,126 @@
         <div class="uppercase text-lg font-semibold">FILTERS</div>
 
         <div x-data="{isOpen:true}">
-          <button @click="isOpen = !isOpen" class="flex items-center justify-between gap-2 mt-4 w-full cursor-pointer border-t border-[#C8C8C8] pt-4">
+          <button @click="isOpen = !isOpen"
+            class="flex items-center justify-between gap-2 mt-4 w-full cursor-pointer border-t border-[#C8C8C8] pt-4">
             <span class="text-sage uppercase text-md font-medium">
               Jewellery Type
             </span>
-              <img :class="isOpen ? 'rotate-180' : ''" src="assets/icons/carat.svg" class="h-2" alt="icon">
+            <img :class="isOpen ? 'rotate-180' : ''" src="assets/icons/carat.svg" class="h-2" alt="icon">
           </button>
 
           <div class="space-y-2 mt-3" x-show="isOpen" x-cloak>
             <div>
-              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="jewel-type" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Diamond Necklace</label>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="jewel-type"
+                  class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Diamond Necklace</label>
             </div>
             <div>
-              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="jewel-type" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Gold Necklace</label>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="jewel-type"
+                  class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Gold Necklace</label>
             </div>
             <div>
-              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="jewel-type" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Silver Necklace</label>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="jewel-type"
+                  class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Silver Necklace</label>
             </div>
-        
+
           </div>
         </div>
 
 
         <div x-data="{isOpen:false}">
-          <button @click="isOpen = !isOpen" class="flex items-center justify-between gap-2 mt-4 w-full cursor-pointer border-t border-[#C8C8C8] pt-4">
+          <button @click="isOpen = !isOpen"
+            class="flex items-center justify-between gap-2 mt-4 w-full cursor-pointer border-t border-[#C8C8C8] pt-4">
             <span class="text-sage uppercase text-md font-medium">
               Weight
             </span>
-              <img :class="isOpen ? 'rotate-180' : ''" src="assets/icons/carat.svg" class="h-2" alt="icon">
+            <img :class="isOpen ? 'rotate-180' : ''" src="assets/icons/carat.svg" class="h-2" alt="icon">
           </button>
 
           <div class="space-y-2 mt-3" x-show="isOpen" x-cloak>
             <div>
-              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="weight" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">0-8 Grams</label>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="weight"
+                  class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">0-8 Grams</label>
             </div>
             <div>
-              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="weight" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">8-16 Grams</label>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="weight"
+                  class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">8-16 Grams</label>
             </div>
             <div>
-              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="weight" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">16-24 Grams</label>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="weight"
+                  class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">16-24 Grams</label>
             </div>
             <div>
-              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="weight" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">24-32 Grams</label>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="weight"
+                  class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">24-32 Grams</label>
             </div>
-        
+
             <div>
-              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="weight" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Above 32 Grams</label>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="weight"
+                  class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Above 32 Grams</label>
             </div>
-        
-        
+
+
           </div>
         </div>
 
 
         <div x-data="{isOpen:false}">
-          <button @click="isOpen = !isOpen" class="flex items-center justify-between gap-2 mt-4 w-full cursor-pointer border-t border-[#C8C8C8] pt-4">
+          <button @click="isOpen = !isOpen"
+            class="flex items-center justify-between gap-2 mt-4 w-full cursor-pointer border-t border-[#C8C8C8] pt-4">
             <span class="text-sage uppercase text-md font-medium">
               Color
             </span>
-              <img :class="isOpen ? 'rotate-180' : ''" src="assets/icons/carat.svg" class="h-2" alt="icon">
+            <img :class="isOpen ? 'rotate-180' : ''" src="assets/icons/carat.svg" class="h-2" alt="icon">
           </button>
 
           <div class="space-y-2 mt-3" x-show="isOpen" x-cloak>
             <div>
-              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="color" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 1</label>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="color"
+                  class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 1</label>
             </div>
             <div>
-              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="color" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 2</label>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="color"
+                  class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 2</label>
             </div>
             <div>
-              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="color" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 3</label>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="color"
+                  class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 3</label>
             </div>
-        
+
           </div>
         </div>
 
 
 
         <div x-data="{isOpen:false}">
-          <button @click="isOpen = !isOpen" class="flex items-center justify-between gap-2 mt-4 w-full cursor-pointer border-t border-[#C8C8C8] pt-4">
+          <button @click="isOpen = !isOpen"
+            class="flex items-center justify-between gap-2 mt-4 w-full cursor-pointer border-t border-[#C8C8C8] pt-4">
             <span class="text-sage uppercase text-md font-medium">
               VA
             </span>
-              <img :class="isOpen ? 'rotate-180' : ''" src="assets/icons/carat.svg" class="h-2" alt="icon">
+            <img :class="isOpen ? 'rotate-180' : ''" src="assets/icons/carat.svg" class="h-2" alt="icon">
           </button>
 
           <div class="space-y-2 mt-3" x-show="isOpen" x-cloak>
             <div>
-              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="va" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 1</label>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="va"
+                  class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 1</label>
             </div>
             <div>
-              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="va" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 2</label>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="va"
+                  class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 2</label>
             </div>
             <div>
-              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="va" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 3</label>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="va"
+                  class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 3</label>
             </div>
-        
+
           </div>
         </div>
-        
 
 
-        
+
+
 
 
 
@@ -486,19 +504,172 @@
   </main>
 
 
-  <section class="fixed bottom-20 w-full lg:hidden px-5">
-    <div class="flex justify-center items-center bg-black text-white gap-4 px-4 py-3 rounded-full max-w-xs mx-auto">
-      <button class="border-r border-white pr-4 uppercase text-sm">SORT BY</button>
-      <button class="uppercase text-sm flex items-center gap-1">
-         <span>FILTER
-        </span> 
-        <span class="relative">
-          <img src="assets/icons/filter.svg" class="h-3" alt="filter">
-          <span class="absolute bg-[#964A26] text-white text-xs rounded-full px-1 flex items-center justify-center -top-2 -right-4">0</span>
-        </span>
-      </button>
+  <!-- Alpine Wrapper -->
+  <div x-data="{ showFilter: false, showSort: true, filterCount: 0 }" x-init="
+    filterCount = Array.from(document.querySelectorAll('.filter-option'))
+      .filter(cb => cb.checked).length
+  ">
+
+    <!-- Trigger Buttons -->
+    <section class="fixed bottom-20 w-full lg:hidden px-5">
+      <div class="grid grid-cols-2 bg-black text-white gap-4 px-4 py-3 rounded-full max-w-fit mx-auto">
+        <button @click="showSort = true" class="border-r border-white px-4 uppercase text-sm">SORT BY</button>
+        <button @click="showFilter = true" class="uppercase text-sm flex items-center gap-1 pe-4">
+          <span>FILTER</span>
+          <span class="relative">
+            <img src="assets/icons/filter.svg" class="h-3" alt="filter">
+            <span
+              class="absolute bg-[#964A26] text-white text-xs rounded-full px-1 flex items-center justify-center -top-2 -right-4"
+              x-text="filterCount"></span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SORT BY POPUP -->
+    <div x-show="showSort" x-cloak class="fixed inset-0 z-40 bg-white max-w-md" @click.away="showSort = false">
+      <div class="flex justify-between items-center sticky top-0 bg-black text-white p-4">
+        <h2 class="text-lg font-medium">SORT BY</h2>
+        <button @click="showSort = false">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
+    
+      <div class="space-y-4 text-lg p-4 py-6">
+        <label class="block cursor-pointer">
+          <input type="radio" name="sort" class="sr-only" @change="showSort = false"> New Arrivals
+        </label>
+        <label class="block cursor-pointer">
+          <input type="radio" name="sort" class="sr-only" @change="showSort = false"> Popular
+        </label>
+        <label class="block cursor-pointer">
+          <input type="radio" name="sort" class="sr-only" @change="showSort = false"> Low to High Price
+        </label>
+        <label class="block cursor-pointer">
+          <input type="radio" name="sort" class="sr-only" @change="showSort = false"> High to Low Price
+        </label>
+      </div>
     </div>
-  </section>
+    
+
+    <!-- FILTER POPUP -->
+    <div x-show="showFilter" x-cloak
+      class="fixed inset-0 z-50 bg-white overflow-y-auto transition-all duration-300 ease-in-out max-w-md" @click.away="showFilter = false">
+
+      <div class="flex justify-between items-center sticky top-0 bg-black text-white p-4">
+        <h2 class="text-lg font-medium">FILTER</h2>
+        <button @click="showFilter = false">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+          </svg>
+          
+        </button>
+      </div>
+
+
+      <div class="p-4">
+       
+
+        <!-- Filter Sections -->
+        <!-- FILTER POPUP CONTENT -->
+        <div class="space-y-4">
+
+          <!-- 1. Jewellery Type -->
+          <div x-data="{isOpen:true}">
+            <button @click="isOpen = !isOpen"
+              class="flex justify-between items-center gap-2 mt-4 w-full cursor-pointer" :class="isOpen ? '' : 'border-b border-[#C8C8C8] pb-4'">
+              <span class="text-sage uppercase text-md font-medium">Jewellery Type</span>
+              <img :class="isOpen ? 'rotate-180' : ''" src="assets/icons/carat.svg" class="h-2" alt="icon">
+            </button>
+            <div class="space-y-2 mt-3 border border-[#C8C8C8] rounded-md p-4" x-show="isOpen" x-cloak>
+              <label class="flex items-center gap-2 text-sm">
+                <input type="checkbox" name="jewel-type"
+                  class="filter-option h-4 w-4 rounded-sm border-[#3B4443] accent-sage"
+                  @change="filterCount += $event.target.checked ? 1 : -1"> Diamond Necklace
+              </label>
+              <label class="flex items-center gap-2 text-sm">
+                <input type="checkbox" name="jewel-type"
+                  class="filter-option h-4 w-4 rounded-sm border-[#3B4443] accent-sage"
+                  @change="filterCount += $event.target.checked ? 1 : -1"> Gold Necklace
+              </label>
+              <label class="flex items-center gap-2 text-sm">
+                <input type="checkbox" name="jewel-type"
+                  class="filter-option h-4 w-4 rounded-sm border-[#3B4443] accent-sage"
+                  @change="filterCount += $event.target.checked ? 1 : -1"> Silver Necklace
+              </label>
+            </div>
+          </div>
+
+          <!-- 2. Weight -->
+          <div x-data="{isOpen:false}">
+            <button @click="isOpen = !isOpen"
+            class="flex justify-between items-center gap-2 mt-4 w-full cursor-pointer" :class="isOpen ? '' : 'border-b border-[#C8C8C8] pb-4'">
+            <span class="text-sage uppercase text-md font-medium">Weight</span>
+              <img :class="isOpen ? 'rotate-180' : ''" src="assets/icons/carat.svg" class="h-2" alt="icon">
+            </button>
+            <div class="space-y-2 mt-3 border border-[#C8C8C8] rounded-md p-4" x-show="isOpen" x-cloak>
+              <template x-for="weight in ['0-8 Grams', '8-16 Grams', '16-24 Grams', '24-32 Grams', 'Above 32 Grams']">
+                <label class="flex items-center gap-2 text-sm">
+                  <input type="checkbox" name="weight"
+                    class="filter-option h-4 w-4 rounded-sm border-[#3B4443] accent-sage"
+                    @change="filterCount += $event.target.checked ? 1 : -1" :value="weight"> <span
+                    x-text="weight"></span>
+                </label>
+              </template>
+            </div>
+          </div>
+
+          <!-- 3. Color -->
+          <div x-data="{isOpen:false}">
+            <button @click="isOpen = !isOpen"
+            class="flex justify-between items-center gap-2 mt-4 w-full cursor-pointer" :class="isOpen ? '' : 'border-b border-[#C8C8C8] pb-4'">
+            <span class="text-sage uppercase text-md font-medium">Color</span>
+              <img :class="isOpen ? 'rotate-180' : ''" src="assets/icons/carat.svg" class="h-2" alt="icon">
+            </button>
+            <div class="space-y-2 mt-3 border border-[#C8C8C8] rounded-md p-4" x-show="isOpen" x-cloak>
+              <template x-for="color in ['Option 1', 'Option 2', 'Option 3']">
+                <label class="flex items-center gap-2 text-sm">
+                  <input type="checkbox" name="color"
+                    class="filter-option h-4 w-4 rounded-sm border-[#3B4443] accent-sage"
+                    @change="filterCount += $event.target.checked ? 1 : -1" :value="color"> <span x-text="color"></span>
+                </label>
+              </template>
+            </div>
+          </div>
+
+          <!-- 4. VA -->
+          <div x-data="{isOpen:false}">
+            <button @click="isOpen = !isOpen"
+            class="flex justify-between items-center gap-2 mt-4 w-full cursor-pointer" :class="isOpen ? '' : 'border-b border-[#C8C8C8] pb-4'">
+            <span class="text-sage uppercase text-md font-medium">VA</span>
+              <img :class="isOpen ? 'rotate-180' : ''" src="assets/icons/carat.svg" class="h-2" alt="icon">
+            </button>
+            <div class="space-y-2 mt-3 border border-[#C8C8C8] rounded-md p-4" x-show="isOpen" x-cloak>
+              <template x-for="va in ['Option 1', 'Option 2', 'Option 3']">
+                <label class="flex items-center gap-2 text-sm">
+                  <input type="checkbox" name="va" class="filter-option h-4 w-4 rounded-sm border-[#3B4443] accent-sage"
+                    @change="filterCount += $event.target.checked ? 1 : -1" :value="va"> <span x-text="va"></span>
+                </label>
+              </template>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- Apply Filters -->
+        <div class="mt-10">
+          <button @click="showFilter = false" class="bg-[#964A26] text-white w-full py-3 rounded-md uppercase text-base font-medium">
+            Apply Filters
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   <section
     class="bg-[#F2EDE4] px-4 py-3 sm:px-6 md:px-8 lg:px-12 xl:px-16 grid grid-cols-4 fixed bottom-0 w-full lg:hidden">
