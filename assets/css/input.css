@@ -46,8 +46,9 @@ body {
 
 }
 main{
-    @apply min-h-screen;
+    @apply min-h-[screen-80px]
 }
+
 .alga {
     font-family: Alga;
 }

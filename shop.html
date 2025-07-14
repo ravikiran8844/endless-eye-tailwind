@@ -50,13 +50,125 @@
   </header>
   <main class="grid lg:grid-cols-[320px_auto]">
 
-    <aside class="bg-[#F2EDE4] min-h-screen max-lg:hidden border-r border-[#C7C7C7] py-8 px-4 ps-12">
+    <aside class="bg-[#F2EDE4] max-lg:hidden border-r border-[#C7C7C7] py-8 px-4 ps-12">
       <div class="flex gap-2 uppercase copperplate text-xs"><span>HOME</span>|<span
           class="text-[#964A26]">Necklace</span></div>
 
       <div class="mt-4">
         <div class="text-md text-[#282828] text-md font-semibold copperplate">Necklace</div>
         <div class="text-sm text-[#5E5E5E]">(1443 Designs)</div>
+      </div>
+
+      <div class="mt-8">
+        <div class="uppercase text-lg font-semibold">FILTERS</div>
+
+        <div x-data="{isOpen:true}">
+          <button @click="isOpen = !isOpen" class="flex items-center justify-between gap-2 mt-4 w-full cursor-pointer border-t border-[#C8C8C8] pt-4">
+            <span class="text-sage uppercase text-md font-medium">
+              Jewellery Type
+            </span>
+              <img src="assets/icons/carat.svg" class="h-2" alt="icon">
+          </button>
+
+          <div class="space-y-2 mt-3" x-show="isOpen" x-cloak>
+            <div>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="jewel-type" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Diamond Necklace</label>
+            </div>
+            <div>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="jewel-type" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Gold Necklace</label>
+            </div>
+            <div>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="jewel-type" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Silver Necklace</label>
+            </div>
+        
+          </div>
+        </div>
+
+
+        <div x-data="{isOpen:false}">
+          <button @click="isOpen = !isOpen" class="flex items-center justify-between gap-2 mt-4 w-full cursor-pointer border-t border-[#C8C8C8] pt-4">
+            <span class="text-sage uppercase text-md font-medium">
+              Weight
+            </span>
+              <img src="assets/icons/carat.svg" class="h-2" alt="icon">
+          </button>
+
+          <div class="space-y-2 mt-3" x-show="isOpen" x-cloak>
+            <div>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="weight" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">0-8 Grams</label>
+            </div>
+            <div>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="weight" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">8-16 Grams</label>
+            </div>
+            <div>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="weight" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">16-24 Grams</label>
+            </div>
+            <div>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="weight" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">24-32 Grams</label>
+            </div>
+        
+            <div>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="weight" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Above 32 Grams</label>
+            </div>
+        
+        
+          </div>
+        </div>
+
+
+        <div x-data="{isOpen:false}">
+          <button @click="isOpen = !isOpen" class="flex items-center justify-between gap-2 mt-4 w-full cursor-pointer border-t border-[#C8C8C8] pt-4">
+            <span class="text-sage uppercase text-md font-medium">
+              Color
+            </span>
+              <img src="assets/icons/carat.svg" class="h-2" alt="icon">
+          </button>
+
+          <div class="space-y-2 mt-3" x-show="isOpen" x-cloak>
+            <div>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="color" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 1</label>
+            </div>
+            <div>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="color" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 2</label>
+            </div>
+            <div>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="color" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 3</label>
+            </div>
+        
+          </div>
+        </div>
+
+
+
+        <div x-data="{isOpen:false}">
+          <button @click="isOpen = !isOpen" class="flex items-center justify-between gap-2 mt-4 w-full cursor-pointer border-t border-[#C8C8C8] pt-4">
+            <span class="text-sage uppercase text-md font-medium">
+              VA
+            </span>
+              <img src="assets/icons/carat.svg" class="h-2" alt="icon">
+          </button>
+
+          <div class="space-y-2 mt-3" x-show="isOpen" x-cloak>
+            <div>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="va" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 1</label>
+            </div>
+            <div>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="va" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 2</label>
+            </div>
+            <div>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="va" class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Option 3</label>
+            </div>
+        
+          </div>
+        </div>
+        
+
+
+        
+
+
+
+
       </div>
     </aside>
 
@@ -66,7 +178,7 @@
         <div class="text-sm text-[#282828] text-md font-semibold copperplate">Necklace</div>
       </div>
 
-      <div class="flex flex-wrap items-center gap-1 mb-10">
+      <div class="flex flex-wrap items-center gap-1 md:gap-2 mb-10">
         <div
           class="inline-flex items-center gap-2 text-xs border border-[#C4AE98] rounded-full px-2 py-1 text-[#3B4443]">
           <div>Gold Jewellery</div> <button class="cursor-pointer">
@@ -512,6 +624,10 @@
       </div>
     </div>
   </footer>
+
+
+  <script src="//unpkg.com/alpinejs" defer></script>
+
 </body>
 
 </html>
