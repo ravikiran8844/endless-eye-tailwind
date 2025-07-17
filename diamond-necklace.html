@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop - Endless Eye</title>
+  <title>Diamond Necklace - Endless Eye</title>
   <link rel="stylesheet" href="assets/css/output.css" />
 </head>
 
@@ -73,11 +73,11 @@
 
           <div class="space-y-2 mt-3" x-show="isOpen" x-cloak>
             <div>
-              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="jewel-type"
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" checked name="jewel-type"
                   class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Diamond Necklace</label>
             </div>
             <div>
-              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="jewel-type"
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox"  name="jewel-type"
                   class="h-4 w-4 rounded-sm border-[#3B4443] accent-sage">Gold Necklace</label>
             </div>
             <div>
@@ -192,11 +192,12 @@
 
     <section class="px-4 py-6 lg:py-10 sm:px-6 md:px-8 lg:px-10 xl:px-12">
 
-      <div class="mb-4 lg:hidden">
-        <div class="text-sm text-[#282828] text-md font-semibold copperplate">Necklace</div>
+      <div class="mb-4 mb:mb-6 lg:mb-8">
+        <div class="text-sm text-[#282828] text-md font-semibold copperplate">Diamond Necklace
+        </div>
       </div>
 
-      <div class="flex flex-wrap items-center gap-1 md:gap-2 mb-10 max-lg:hidden">
+      <!-- <div class="flex flex-wrap items-center gap-1 md:gap-2 mb-10 max-lg:hidden">
         <div
           class="inline-flex items-center gap-2 text-xs border border-[#C4AE98] rounded-full px-2 py-1 text-[#3B4443]">
           <div>Gold Jewellery</div> <button class="cursor-pointer">
@@ -218,95 +219,46 @@
             <img class="h-2" src="assets/icons/close.svg" alt="close">
           </button>
         </div>
-      </div>
+      </div> -->
 
 
       <div class="grid min-[450px]:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6 xl:gap-8">
 
 
-        <!-- <div class="max-w-sm mx-auto">
-          <div class="aspect-square">
-            <a href="product.html">
-              <img width="422" height="422" src="assets/images/shop/product1.webp" alt="product">
+    
+ 
+
+
+        <div>
+          <!-- Responsive Image Wrapper with Aspect Ratio -->
+          <div class="aspect-[1/1] w-full bg-gray-100 overflow-hidden">
+            <a href="product.html" class="block w-full h-full">
+              <img
+                src="assets/images/shop/product1.webp"
+                alt="product"
+                class="w-full h-full object-cover"
+                onerror="this.style.display='none';"
+              >
             </a>
           </div>
-          <div class="p-2 space-y-3 border-l border-r border-b border-[#C8C8C8]">
+        
+          <!-- Content Section -->
+          <div class="p-2 space-y-3 border-l border-r border-b border-gray-200">
             <div class="text-center space-y-1">
               <div class="text-sm font-medium truncate">Romantic Diamond Necklace Set</div>
-              <div class="text-xs"><span class="text-[#4E4E4E]">Photo Number:</span> <span
-                  class="font-medium">AMS-102-7190</span></div>
-            </div>
-
-            <div class="bg-[#FDF3F2] h-10 flex items-center px-4 rounded-sm">
-              <div class="text-sage text-sm font-medium truncate">Net Weight: <span>24.4g</span></div>
-            </div>
-
-            <div class="grid grid-cols-[auto_auto_auto_auto] gap-1  border-t border-b border-[#C8C8C8] py-4">
-              <div class="flex flex-col text-center items-center border-r pr-1 border-[#C8C8C8]">
-                <img class="h-6" src="assets/icons/weight.svg" alt="weight">
-                <div class="text-xs text-[#4E4E4E] mt-1">Weight</div>
-                <div class="text-xs font-medium">24.4g</div>
-              </div>
-              <div class="flex flex-col text-center items-center  border-r pr-1 border-[#C8C8C8]">
-                <img class="h-6" src="assets/icons/size.svg" alt="Size">
-                <div class="text-xs text-[#4E4E4E] mt-1">Size</div>
-                <div class="text-xs font-medium">NA</div>
-              </div>
-              <div class="flex flex-col text-center items-center  border-r pr-1 border-[#C8C8C8]">
-                <img class="h-6" src="assets/icons/purity.svg" alt="Purity">
-                <div class="text-xs text-[#4E4E4E] mt-1">Purity</div>
-                <div class="text-xs font-medium">20K</div>
-              </div>
-              <div class="flex flex-col text-center items-center ">
-                <img class="h-6" src="assets/icons/making-code.svg" alt="Making Code">
-                <div class="text-xs text-[#4E4E4E] mt-1">Making Code</div>
-                <div class="text-xs font-medium">18K</div>
-              </div>
-            </div>
-
-
-            <div>
-              <a class="text-[#964A26] uppercase text-sm copperplate text-center block underline underline-offset-4" href="product.html">View
-                Product</a>
-            </div>
-          </div>
-        </div> -->
-
-
-
-        <div>
-          <!-- Responsive Image Wrapper with Aspect Ratio -->
-          <div class="aspect-[1/1] w-full bg-gray-100 overflow-hidden">
-            <a href="product.html" class="block w-full h-full">
-              <img
-                src="assets/images/shop/product1.webp"
-                alt="product"
-                class="w-full h-full object-cover"
-                onerror="this.style.display='none';"
-              >
-            </a>
-          </div>
-        
-          <!-- Content Section -->
-          <div class="p-2 space-y-3 border-l border-r border-b border-gray-200">
-            <div class="text-center space-y-1">
-              <div class="text-sm font-medium truncate">Romantic Gold Necklace Set</div>
               <div class="text-xs">
                 <span class="text-[#4E4E4E]">Photo Number:</span>
                 <span class="font-medium">AMS-102-7190</span>
               </div>
             </div>
         
-            <div class="flex flex-wrap justify-center gap-2">
-              <div class="bg-[#FDF3F2] h-10 flex items-center px-4 rounded-sm">
-                <div class="text-sage text-sm font-medium">Net Weight: <span>24.4g</span></div>
-              </div>
-              <div class="bg-[#ECFEDD] h-10 flex items-center px-4 rounded-sm">
-                <div class="text-[#0D9B4D] text-sm font-medium">VA: <span>DIA500G15</span></div>
-              </div>
-            </div>
+           
         
-            <div class="flex justify-center gap-3 border-b border-gray-200 pb-4">
+            <div class="flex justify-center gap-3 border-t border-gray-200 pt-3">
+                <div class="flex flex-col text-center items-center border-r pr-3 border-gray-200">
+                    <div class="text-xs text-[#4E4E4E] mt-1">Ct Wt</div>
+                    <div class="text-xs font-medium">20g</div>
+                  </div>
               <div class="flex flex-col text-center items-center border-r pr-3 border-gray-200">
                 <div class="text-xs text-[#4E4E4E] mt-1">Gold Wt</div>
                 <div class="text-xs font-medium">20g</div>
@@ -320,62 +272,15 @@
                 <div class="text-xs font-medium">Y</div>
               </div>
             </div>
-        
-            <div class="mb-2">
-              <a class="text-[#964A26] uppercase text-sm copperplate text-center block underline underline-offset-4" href="product.html">
-                View Product
-              </a>
-            </div>
-          </div>
-        </div>
 
-
-        <div>
-          <!-- Responsive Image Wrapper with Aspect Ratio -->
-          <div class="aspect-[1/1] w-full bg-gray-100 overflow-hidden">
-            <a href="product.html" class="block w-full h-full">
-              <img
-                src="assets/images/shop/product1.webp"
-                alt="product"
-                class="w-full h-full object-cover"
-                onerror="this.style.display='none';"
-              >
-            </a>
-          </div>
-        
-          <!-- Content Section -->
-          <div class="p-2 space-y-3 border-l border-r border-b border-gray-200">
-            <div class="text-center space-y-1">
-              <div class="text-sm font-medium truncate">Romantic Gold Necklace Set</div>
-              <div class="text-xs">
-                <span class="text-[#4E4E4E]">Photo Number:</span>
-                <span class="font-medium">AMS-102-7190</span>
+            <div class="flex flex-wrap justify-center gap-2 ">
+                <div class="bg-[#FDF3F2] h-10 flex items-center px-4 rounded-sm">
+                  <div class="text-sage text-sm font-medium">Stone: <span>14</span></div>
+                </div>
+                <div class="bg-[#ECFEDD] h-10 flex items-center px-4 rounded-sm">
+                  <div class="text-[#0D9B4D] text-sm font-medium">VA: <span>DIA500G15</span></div>
+                </div>
               </div>
-            </div>
-        
-            <div class="flex flex-wrap justify-center gap-2">
-              <div class="bg-[#FDF3F2] h-10 flex items-center px-4 rounded-sm">
-                <div class="text-sage text-sm font-medium">Net Weight: <span>24.4g</span></div>
-              </div>
-              <div class="bg-[#ECFEDD] h-10 flex items-center px-4 rounded-sm">
-                <div class="text-[#0D9B4D] text-sm font-medium">VA: <span>DIA500G15</span></div>
-              </div>
-            </div>
-        
-            <div class="flex justify-center gap-3 border-b border-gray-200 pb-4">
-              <div class="flex flex-col text-center items-center border-r pr-3 border-gray-200">
-                <div class="text-xs text-[#4E4E4E] mt-1">Gold Wt</div>
-                <div class="text-xs font-medium">20g</div>
-              </div>
-              <div class="flex flex-col text-center items-center border-r pr-3 border-gray-200">
-                <div class="text-xs text-[#4E4E4E] mt-1">Size</div>
-                <div class="text-xs font-medium">NA</div>
-              </div>
-              <div class="flex flex-col text-center items-center">
-                <div class="text-xs text-[#4E4E4E] mt-1">Color</div>
-                <div class="text-xs font-medium">Y</div>
-              </div>
-            </div>
         
             <div class="mb-2">
               <a class="text-[#964A26] uppercase text-sm copperplate text-center block underline underline-offset-4" href="product.html">
@@ -486,12 +391,12 @@
             </button>
             <div class="space-y-2 mt-3 border border-[#C8C8C8] rounded-md p-4" x-show="isOpen" x-cloak>
               <label class="flex items-center gap-2 text-sm">
-                <input type="checkbox" name="jewel-type"
+                <input type="checkbox" checked name="jewel-type"
                   class="filter-option h-4 w-4 rounded-sm border-[#3B4443] accent-sage"
                   @change="filterCount += $event.target.checked ? 1 : -1"> Diamond Necklace
               </label>
               <label class="flex items-center gap-2 text-sm">
-                <input type="checkbox" name="jewel-type"
+                <input type="checkbox"  name="jewel-type"
                   class="filter-option h-4 w-4 rounded-sm border-[#3B4443] accent-sage"
                   @change="filterCount += $event.target.checked ? 1 : -1"> Gold Necklace
               </label>
