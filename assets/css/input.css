@@ -66,3 +66,14 @@ main{
 .custom-shadow{
     box-shadow: 1px 1px 2px 0px rgba(255, 255, 255, 0.30) inset, -1px -1px 2px 0px rgba(230, 230, 230, 0.50) inset, -5px 5px 10px 0px rgba(230, 230, 230, 0.20), 5px -5px 10px 0px rgba(230, 230, 230, 0.20), -5px -5px 10px 0px rgba(255, 255, 255, 0.90), 5px 5px 13px 0px rgba(230, 230, 230, 0.90);
 }
+
+label input[type="checkbox"]{
+   @apply relative w-4 h-4 rounded-sm border-[#3B4443];
+
+}
+label input[type="checkbox"]::after{
+    @apply w-4 h-4 rounded-xs  border border-[#3B4443] bg-white content-[""] absolute z-1;
+}
+label input[type="checkbox"]:checked::after{
+    @apply bg-[#964A26] w-4 h-4  border border-[#3B4443] content-[""] absolute z-10
+}
