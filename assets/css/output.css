@@ -745,6 +745,14 @@
   .text-shadow-2xs {
     text-shadow: 0px 1px 0px var(--tw-text-shadow-color, rgb(0 0 0 / 0.15));
   }
+  .hover\:brightness-90 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-brightness: brightness(90%);
+        filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+      }
+    }
+  }
   .max-lg\:hidden {
     @media (width < 64rem) {
       display: none;
@@ -959,13 +967,13 @@
   }
 }
 @font-face {
-  font-family: Alga;
+  font-family: "Alga";
   src: url('../fonts/Alga-Light.otf') format('opentype');
   font-display: swap;
   font-weight: 400;
 }
 @font-face {
-  font-family: Alga;
+  font-family: "Alga";
   src: url('../fonts/Alga-Medium.otf') format('opentype');
   font-display: swap;
   font-weight: 500;
@@ -983,13 +991,13 @@
   font-weight: 500;
 }
 @font-face {
-  font-family: Copperplate;
+  font-family: "Copperplate";
   src: url('../fonts/Copperplate-Light.otf') format('opentype');
   font-display: swap;
   font-weight: 400;
 }
 @font-face {
-  font-family: Copperplate;
+  font-family: "Copperplate";
   src: url('../fonts/Copperplate.otf') format('opentype');
   font-display: swap;
   font-weight: 500;
@@ -1002,13 +1010,13 @@ main {
   min-height: calc(100vh - 160px);
 }
 .alga {
-  font-family: Alga;
+  font-family: "Alga";
 }
 .helvetica-neue {
   font-family: "Helvetica Neue";
 }
 .copperplate {
-  font-family: Copperplate;
+  font-family: "Copperplate";
 }
 [x-cloak] {
   display: none !important;
@@ -1038,7 +1046,7 @@ label input[type="checkbox"]::after {
 }
 label input[type="checkbox"]:checked::after {
   position: absolute;
-  z-index: 10;
+  z-index: 1;
   height: calc(var(--spacing) * 4);
   width: calc(var(--spacing) * 4);
   border-style: var(--tw-border-style);

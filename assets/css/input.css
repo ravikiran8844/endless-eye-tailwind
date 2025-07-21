@@ -4,13 +4,13 @@
 }
 
 @font-face {
-    font-family: Alga;
+    font-family: "Alga";
     src: url('../fonts/Alga-Light.otf') format('opentype');
     font-display: swap;
     font-weight: 400;
 }
 @font-face {
-    font-family: Alga;
+    font-family: "Alga";
     src: url('../fonts/Alga-Medium.otf') format('opentype');
     font-display: swap;
     font-weight: 500;
@@ -29,13 +29,13 @@
 }
 
 @font-face {
-    font-family: Copperplate;
+    font-family: "Copperplate";
     src: url('../fonts/Copperplate-Light.otf') format('opentype');
     font-display: swap;
     font-weight: 400;
 }
 @font-face {
-    font-family: Copperplate;
+    font-family: "Copperplate";
     src: url('../fonts/Copperplate.otf') format('opentype');
     font-display: swap;
     font-weight: 500;
@@ -50,14 +50,14 @@ main{
 }
 
 .alga {
-    font-family: Alga;
+    font-family: "Alga";
 }
 .helvetica-neue{
     font-family: "Helvetica Neue";
 }
 
 .copperplate{
-    font-family: Copperplate;
+    font-family: "Copperplate";
 }
 
 [x-cloak] {
@@ -75,5 +75,5 @@ label input[type="checkbox"]::after{
     @apply w-4 h-4 rounded-xs  border border-[#3B4443] bg-white content-[""] absolute z-1;
 }
 label input[type="checkbox"]:checked::after{
-    @apply bg-[#964A26] w-4 h-4  border border-[#3B4443] content-[""] absolute z-10
+    @apply bg-[#964A26] w-4 h-4  border border-[#3B4443] content-[""] absolute z-1;
 }
